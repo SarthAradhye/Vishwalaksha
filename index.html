@@ -10,6 +10,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Share+Tech&family=Sixtyfour&display=swap" rel="stylesheet">
     <link rel="icon" href="/images/Aradhye Tech Logo.png" type="image/icon type">
+    <script>
+        function detectDevice() {
+            const userAgent = navigator.userAgent.toLowerCase();
+            const isMobile = /mobile|android|iphone|ipad|ipod|blackberry|opera mini|iemobile/.test(userAgent);
+        
+            if (isMobile) {
+              alert("Please use a Desktop for a better experience.");
+            }
+          }
+        
+          // Call the function when the page loads
+          detectDevice();
+    </script>
 </head>
 <body>
     <header>
@@ -101,6 +114,5 @@
                 <button type="submit">Send Message</button>
         </form>
     </div>  
-
 </body>
 </html>
