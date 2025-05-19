@@ -9,98 +9,265 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Share+Tech&family=Sixtyfour&display=swap" rel="stylesheet">
-    <link rel="icon" href="/images/Aradhye Tech Logo.png" type="image/icon type">
+    <link rel="icon" href="images/Aradhye Tech Logo.png" type="image/icon type">
     
 </head>
 <body>
+    <!-- Prototype Notice Banner -->
+    <div class="prototype-notice">
+        <div class="notice-content">
+            <span class="blink">⚠️</span> 
+            <p>This is a basic prototype. The final product will be significantly improved and more accurate.</p>
+            <span class="blink">⚠️</span>
+        </div>
+    </div>
+
     <header>
         <div class="logo">
-            <img src="/images/Aradhye Tech Logo.png" alt="">
+            <img src="images/Aradhye Tech Logo.png" alt="Aradhye Tech Logo">
             <div class="logo-text">
                 <h1>AradhyeTech</h1>
                 <p>Change matters</p>
             </div>
         </div>
         <nav>
-           <a href="#About">About</a>
-           <a href="#Quote">Get Quote</a>
+           <a href="#about">About</a>
+           <a href="#quote">Get Quote</a>
         </nav>
     </header>
-    <div class="banner">
-        <h1>Vishwalaksha Camera System</h1>
-        <h3>Always active to make you safe.</h3>
-    </div>
 
-    <div id="#About">
-        <div class="content">
-            <h2>📷 About Vishwalaksha Smart Camera System</h2>
-      
-        <p>
-          <b>Vishwalaksha</b> is an advanced AI-powered smart camera system designed to act as a vigilant digital sentinel for public and private spaces.
-          Developed with state-of-the-art computer vision and real-time analytics, Vishwalaksha automatically detects suspicious, criminal, and life-threatening activities,
-          alerting authorities instantly to enable rapid response and prevention.
-        </p>
-      
-        <p>
-          Powered by cutting-edge object detection, behavioral analysis, and AI pattern recognition, the system continuously monitors its surroundings and identifies critical events
-          with high accuracy — without human bias or fatigue.
-        </p>
-      
-        <h3>🛡️ Crimes and Threats Detected by Vishwalaksha:</h3>
-        <ol>
-          <li><b>Rape</b></li>
-          <li><b>Attempt of Rape</b></li>
-          <li><b>Assault Against Women</b></li>
-          <li><b>Harassment</b></li>
-          <li><b>Rioting</b></li>
-          <li><b>Robbery</b></li>
-          <li><b>Murder</b></li>
-          <li><b>Weapon Detection</b> (guns, knives, blunt objects)</li>
-          <li><b>Wild Animals in Civilian Areas</b></li>
-          <li><b>Natural Calamities</b> (earthquakes, forest fires, etc.)</li>
-          <li><b>Pickpocketing</b></li>
-          <li><b>Gang Violence</b></li>
-          <li><b>Declared Terrorists</b> (via facial recognition & blacklist database)</li>
-          <li><b>Persons of Interest</b> (custom watchlists)</li>
-          <li><b>High-Speed Vehicles in Restricted Areas</b></li>
-          <li><b>Accidents</b> (building collapse, cylinder blasts, etc.)</li>
-          <li><b>Road Accidents</b></li>
-          <li><b>Water Clogging or Flood Indicators</b></li>
-        </ol>
-      
-        <h3>🚨 Real-Time Intelligence. Automated Alerts. Maximum Safety.</h3>
-        <p>
-          With seamless integration into existing CCTV infrastructure, Vishwalaksha turns ordinary surveillance into <b>active protection</b> — suitable for schools, smart cities,
-          railway stations, sensitive zones, and commercial complexes.
-        </p>
-      
-        <p>
-          By combining vigilance with intelligence, <b>Vishwalaksha</b> is not just a camera — it is a <b>guardian</b>, ensuring safety, accountability, and peace of mind.
-        </p>
+    <div class="banner">
+        <div class="video-container">
+            <video autoplay muted loop id="banner-video">
+                <source src="videos/cctv-footage.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="banner-content">
+            <h1 class="glow-text">Vishwalaksha Camera System</h1>
+            <h3>Always active to make you safe.</h3>
+            <div class="banner-cta">
+                <a href="#quote" class="cta-button">Get a Quote</a>
+                <a href="#about" class="cta-button secondary">Learn More</a>
+            </div>
         </div>
     </div>
-    <div id="Quote">
-        <form id="contactForm"
-            action="https://formspree.io/f/mvgaropn"
-            method="POST"
-            >
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" placeholder="Your Name" required>
-            
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="Your Email" required>
 
-                <label for="organization">Organization</label>
-                <input type="text" id="organization" name="organization" placeholder="Your Organization type">
+    <div id="about" class="section">
+        <div class="content">
+            <h2 class="section-title">📷 About Vishwalaksha Smart Camera System</h2>
+      
+            <div class="content-with-slider">
+                <div class="text-content">
+                    <p>
+                      <b>Vishwalaksha</b> is an advanced AI-powered smart camera system designed to act as a vigilant digital sentinel for public and private spaces.
+                      Developed with state-of-the-art computer vision and real-time analytics, Vishwalaksha automatically detects suspicious, criminal, and life-threatening activities,
+                      alerting authorities instantly to enable rapid response and prevention.
+                    </p>
+                  
+                    <p>
+                      Powered by cutting-edge object detection, behavioral analysis, and AI pattern recognition, the system continuously monitors its surroundings and identifies critical events
+                      with high accuracy — without human bias or fatigue.
+                    </p>
+                </div>
+                
+                <div class="image-slider">
+                    <div class="slider-container">
+                        <div class="slide fade">
+                            <img src="images/gun1.jpg" alt="AI Detection Example">
+                            <div class="slide-caption">Object Detection</div>
+                        </div>
+                        <div class="slide fade">
+                            <img src="images/gun2.jpg" alt="AI Detection Example">
+                            <div class="slide-caption">Threat Analysis</div>
+                        </div>
+                        <div class="slide fade">
+                            <img src="images/gun3.jpg" alt="AI Detection Example">
+                            <div class="slide-caption">Real-time Monitoring</div>
+                        </div>
+                    </div>
+                    <div class="slider-dots">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                    </div>
+                </div>
+            </div>
+      
+            <h3 class="feature-title">🛡️ Crimes and Threats Detected by Vishwalaksha:</h3>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">🚨</div>
+                    <div class="feature-text">Rape & Attempt of Rape</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">👩</div>
+                    <div class="feature-text">Assault Against Women</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">😠</div>
+                    <div class="feature-text">Harassment</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">👥</div>
+                    <div class="feature-text">Rioting</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">💰</div>
+                    <div class="feature-text">Robbery</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🔪</div>
+                    <div class="feature-text">Murder</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🔫</div>
+                    <div class="feature-text">Weapon Detection</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🐯</div>
+                    <div class="feature-text">Wild Animals in Civilian Areas</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🌋</div>
+                    <div class="feature-text">Natural Calamities</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">👝</div>
+                    <div class="feature-text">Pickpocketing</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">👪</div>
+                    <div class="feature-text">Gang Violence</div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">👤</div>
+                    <div class="feature-text">Declared Terrorists</div>
+                </div>
+            </div>
+      
+            <div class="tech-demo">
+                <div class="tech-demo-content">
+                    <h3 class="tech-title">🚨 Real-Time Intelligence. Automated Alerts. Maximum Safety.</h3>
+                    <p>
+                      With seamless integration into existing CCTV infrastructure, Vishwalaksha turns ordinary surveillance into <b>active protection</b> — suitable for schools, smart cities,
+                      railway stations, sensitive zones, and commercial complexes.
+                    </p>
+                  
+                    <p>
+                      By combining vigilance with intelligence, <b>Vishwalaksha</b> is not just a camera — it is a <b>guardian</b>, ensuring safety, accountability, and peace of mind.
+                    </p>
+                </div>
+                <div class="tech-demo-animation">
+                    <div class="radar-animation">
+                        <div class="radar-sweep"></div>
+                        <div class="radar-target target1"></div>
+                        <div class="radar-target target2"></div>
+                        <div class="radar-target target3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-                <label for="number">Mobile number:</label>
-                <input type="number" id="number" name="number" placeholder="Your mobie number" required>
+    <div id="quote" class="section">
+        <div class="quote-container">
+            <div class="quote-info">
+                <h2>Request a Quote</h2>
+                <p>Interested in implementing Vishwalaksha in your organization? Fill out the form and our team will get back to you with a customized solution.</p>
+                <div class="animated-camera">
+                    <div class="camera-body"></div>
+                    <div class="camera-lens"></div>
+                    <div class="camera-light"></div>
+                </div>
+            </div>
+            <form id="contactForm" action="https://formspree.io/f/mvgaropn" method="POST">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="organization">Organization:</label>
+                    <input type="text" id="organization" name="organization" placeholder="Your Organization type">
+                </div>
+
+                <div class="form-group">
+                    <label for="number">Mobile number:</label>
+                    <input type="tel" id="number" name="number" placeholder="Your mobile number" required>
+                </div>
             
-                <label for="need">Need:</label>
-                <textarea id="need" name="need" placeholder="What do you expect from our AI?" rows="5" required></textarea>
+                <div class="form-group">
+                    <label for="need">Need:</label>
+                    <textarea id="need" name="need" placeholder="What do you expect from our AI?" rows="5" required></textarea>
+                </div>
             
-                <button type="submit">Send Message</button>
-        </form>
-    </div>  
+                <button type="submit" class="submit-btn">
+                    <span class="btn-text">Send Message</span>
+                    <span class="btn-icon">→</span>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="images/Aradhye Tech Logo.png" alt="Aradhye Tech Logo">
+                <div class="footer-text">
+                    <h3>AradhyeTech</h3>
+                    <p>Change matters</p>
+                </div>
+            </div>
+            <div class="footer-info">
+                <p>© 2024 AradhyeTech. All rights reserved.</p>
+                <p class="prototype-text">This website showcases a prototype of the Vishwalaksha Camera System. The final product will be significantly improved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Image slider functionality
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("slide");
+            let dots = document.getElementsByClassName("dot");
+            
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+        }
+
+        // Auto advance slides
+        setInterval(function() {
+            plusSlides(1);
+        }, 4000);
+    </script>
 </body>
 </html>
